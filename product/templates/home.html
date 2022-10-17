@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customers</title>
+</head>
+<body>
+<center><input type="submit" value="Add Customers" onclick="windows.location=/Customers/save"></center>
+<table border="2"></table>
+
+<thead>
+
+<th>product_name</th>
+<th>product_price</th>
+<th>product_image</th>
+
+</thead>
+
+    {% if Customer %}
+{% for consumer in consumer %}
+
+<tbody>
+<td>{{product.name}}</td>
+<td>{{product.name}}</td>
+<td>{{product.name}}</td>
+
+<td> <a href="/product/edit"{{product.name}}>edit</a>
+    <a href="/product/delete"{{product.name}}>delete</a>
+
+</td>
+<% endfor %>
+    {%endif%}
+
+</tbody>
+
+
+</body>
+</html>
